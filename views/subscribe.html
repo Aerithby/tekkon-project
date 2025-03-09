@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKKON 7 - Subscribe</title>
+    <link rel="stylesheet" href="/css/subscribe.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="homepage.html">
+                <img src="/assets/Tekkon7.png" alt="TEKKEN Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html" data-translate="home">Home</a></li>
+                    <li><a href="fighters.html" data-translate="characters">Characters</a></li>
+                    <li><a href="news.html" data-translate="news">News</a></li>
+                    <li><a href="guides.html" data-translate="guides">Guides</a></li>
+                    <li><a href="subscribe.html" data-translate="subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2 class="form-title" data-translate="createAccount">Create Account</h2>
+        <form id="subscribeForm">
+            <div class="form-group">
+                <label for="username" data-translate="username">Username</label>
+                <input type="text" id="username" name="username" data-translate-placeholder="usernamePlaceholder" placeholder="Enter your username">
+                <span id="usernameError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" data-translate="email">Email</label>
+                <input type="email" id="email" name="email" data-translate-placeholder="emailPlaceholder" placeholder="Enter your email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" data-translate="password">Password</label>
+                <input type="password" id="password" name="password" data-translate-placeholder="passwordPlaceholder" placeholder="Enter your password">
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword" data-translate="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" data-translate-placeholder="confirmPasswordPlaceholder" placeholder="Confirm your password">
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms" data-translate="terms">I agree to the terms and conditions</label>
+                <span id="termsError" class="error"></span>
+            </div>
+
+            <button type="submit" class="submit-btn" data-translate="createAccount">Create Account</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="platforms">
+                <a href="#" class="platform-icon">
+                    <img src="/assets/PS5-Logo.png" alt="PlayStation 5">
+                </a>
+                <a href="#" class="platform-icon">
+                    <img src="/assets/pngimg.com - xbox_PNG101381.png" alt="Xbox Series X|S">
+                </a>
+                <a href="#" class="platform-icon">
+                    <img src="/assets/logo_steam.png" alt="Steam">
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <img src="/assets/youtube-logo-png-2069.png" alt="YouTube">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="/assets/twitter new.png" alt="Twitter">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="/assets/fb.png" alt="Facebook">
+                </a>
+            </div>
+            
+            <div class="country-selector">
+                <select class="language-select">
+                    <option value="en">English</option>
+                    <option value="id">Indonesia</option>
+                </select>
+            </div>
+            
+            <div class="copyright">
+                <div class="company-info">
+                    <div class="company-logo">
+                        <img src="/assets/bnea-logo.png" alt="Bandai Namco Entertainment">
+                    </div>
+                    <p class="copyright-text">
+                        TEKKEN 7 © BANDAI NAMCO Entertainment Inc.<br>
+                        All third party content, brands, names, and logos are used under license and remain property of their respective owners. All rights reserved.
+                    </p>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link" data-translate="termsOfService">Terms of Service</a>
+                        <a href="#" class="footer-link" data-translate="privacyPolicy">Privacy Policy</a>
+                        <a href="#" class="footer-link" data-translate="communityEvents">Community Events</a>
+                        <a href="#" class="footer-link" data-translate="legal">Legal</a>
+                    </div>
+                </div>
+                
+                <div class="rating">
+                    <img src="/assets/ESRB_Everyone.svg.png" alt="ESRB Rating">
+                    <ul class="rating-info">
+                        <li data-translate="ratingLanguage">Language</li>
+                        <li data-translate="ratingSuggestive">Suggestive Themes</li>
+                        <li data-translate="ratingViolence">Violence</li>
+                        <li data-translate="ratingInteract">Users Interact</li>
+                        <li data-translate="ratingPurchases">In-Game Purchases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="success-message" id="successMessage">
+        <h2 data-translate="registrationSuccess">Registration Successful!</h2>
+        <p data-translate="accountCreated">Your account has been created successfully.</p>
+        <button onclick="window.location.href='homepage.html'" data-translate="returnHome">Return to Homepage</button>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
